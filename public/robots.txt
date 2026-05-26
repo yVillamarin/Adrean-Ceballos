@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://andrea-ceballos.vercel.app/sitemap.xml

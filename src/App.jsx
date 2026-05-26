@@ -9,12 +9,14 @@ import PricingAndBonus from './components/PricingAndBonus';
 export default function App() {
   return (
     <div className="min-h-screen">
-      <HeroSection />
-      <Services />
-      <AboutMe />
-      <PricingPlans />
-      <Methodology />
-      <PricingAndBonus />
+      <main>
+        <HeroSection />
+        <Services />
+        <AboutMe />
+        <PricingPlans />
+        <Methodology />
+        <PricingAndBonus />
+      </main>
     </div>
   );
 }
