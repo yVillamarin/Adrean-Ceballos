@@ -52,7 +52,7 @@ const FooterSection = () => (
       <img 
         src="/image/logo andris.png" 
         alt="Andris Marketer Logo" 
-        className="w-24 h-24 object-contain"
+        className="w-32 h-32 object-contain"
       />
     </div>
     <h3 className="text-display text-2xl font-bold text-white text-center mb-4">

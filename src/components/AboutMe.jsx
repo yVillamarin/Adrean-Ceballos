@@ -23,7 +23,7 @@ const ABOUT_CONTENT = {
 // Sub-component for profile image
 const ProfileImage = () => (
   <div className="relative">
-    <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-accent p-2">
+    <div className="w-80 h-80 md:w-96 md:h-96 rounded-full bg-accent p-2">
       <div className="w-full h-full rounded-full bg-dark-lighter flex items-center justify-center overflow-hidden">
         <img 
           src="/image/DSC08416.jpg.jpeg" 

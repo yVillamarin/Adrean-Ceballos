@@ -19,7 +19,7 @@ const Logo = () => (
 // Sub-component for phone mockup
 const PhoneMockup = () => (
   <div className="relative">
-    <div className="w-64 h-[500px] md:w-80 md:h-[600px] bg-dark-lighter rounded-[3rem] border-4 border-accent p-3 shadow-2xl">
+    <div className="w-80 h-[550px] md:w-96 md:h-[650px] bg-dark-lighter rounded-[3rem] border-4 border-accent p-3 shadow-2xl">
       <div className="w-full h-full bg-gradient-to-b from-accent/20 to-dark rounded-[2.5rem] overflow-hidden relative">
         <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-20 h-6 bg-dark rounded-full"></div>
         <div className="absolute inset-0 flex items-center justify-center p-4">

@@ -103,7 +103,7 @@ export default function Services() {
       <div className="container mx-auto px-4">
         <SectionHeader />
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
           {SERVICES_CONTENT.services.map((service, index) => (
             <ServiceCard
               key={index}
