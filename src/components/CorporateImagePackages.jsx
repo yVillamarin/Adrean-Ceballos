@@ -8,6 +8,7 @@ const PACKAGES_CONTENT = {
   packages: [
     {
       name: "Plan BÁSICO",
+      price: "$40",
       features: [
         "Logotipo simple",
         "Tipografías",
@@ -19,6 +20,7 @@ const PACKAGES_CONTENT = {
     },
     {
       name: "Plan INTERMEDIO",
+      price: "$75",
       features: [
         "Logotipo Completo (con variaciones)",
         "Plantilla de Publicaciones",
@@ -31,7 +33,8 @@ const PACKAGES_CONTENT = {
       highlight: true
     },
     {
-      name: "Plan COMPLETO",
+      name: "Plan PREMIUM",
+      price: "$130",
       features: [
         "Todo lo incluido en el plan intermedio",
         "Estrategia de marca",
@@ -45,7 +48,7 @@ const PACKAGES_CONTENT = {
 };
 
 // Sub-component for package card
-const PackageCard = ({ name, features, highlight, index }) => (
+const PackageCard = ({ name, price, features, highlight, index }) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -67,9 +70,12 @@ const PackageCard = ({ name, features, highlight, index }) => (
       </div>
     )}
     
-    <h3 className={`text-display text-2xl font-bold mb-6 ${highlight ? 'text-dark' : 'text-dark'}`}>
+    <h3 className={`text-display text-2xl font-bold mb-2 ${highlight ? 'text-dark' : 'text-dark'}`}>
       {name}
     </h3>
+    <p className={`text-3xl font-bold mb-6 ${highlight ? 'text-dark' : 'text-accent'}`}>
+      {price}
+    </p>
     
     <ul className="space-y-3 flex-grow mb-6">
       {features.map((feature, idx) => (
@@ -126,6 +132,7 @@ export default function CorporateImagePackages() {
             <PackageCard
               key={index}
               name={pkg.name}
+              price={pkg.price}
               features={pkg.features}
               highlight={pkg.highlight}
               index={index}
